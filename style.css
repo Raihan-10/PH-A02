@@ -1,0 +1,68 @@
+/* Font inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    /* max-width: 1600px; */
+    font-family: "Inter", sans-serif;
+
+}
+
+/* navbar design */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #1A0B2E;
+    /* max-width: 1600px; */
+    margin: 0 auto;
+}
+.nav-image img{
+    height: 32px;
+    width: 219px;
+    margin: 30px 0px;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    /* margin-left: 314px; */
+    gap: 32px;
+}
+
+/* button */
+.btn-primary:hover .arrow{
+    transform:translate(5px);
+    transition: 0.3s ease-in-out;
+    height: 25px;
+
+}
+ 
+button:hover {
+    transition: 0.5s ease-in-out;
+    background: blue;
+    cursor: pointer;
+}
+.btn-primary {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(45deg,#F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    font-size: 16px;
+    font-weight: 600;
+    padding:12px 16px;
+    gap: 4px;
+    width: 135px;
+    height: 44px;
+    border-radius: 1000px;
+    border: none;
+
+
+}
+.btn-primary img{
+    width: 20px;
+    height: 20px;
+}
+
