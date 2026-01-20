@@ -269,6 +269,7 @@ hr {
     margin-bottom: 120px;
 }
 
+
 /* Why choose techwave section */
 
 .whychoose-techwave {
@@ -371,6 +372,7 @@ hr {
 .featured-episodes {
     background-color: #1A0B2E;
     padding: 120px 200px;
+    margin: 0 auto;
 
 }
 
@@ -467,7 +469,7 @@ hr {
 }
 
 .host-details p {
-    opacity: 0.4;
+    opacity: 0.6;
     margin-top: 16px;
     margin-bottom: 16px;
     line-height: 24px;
@@ -502,8 +504,8 @@ hr {
 .icon-circle img {
     height: 20px;
     width: 20px;
-    /* object-fit: contain; */
 }
+
 
 /* footer */
 
@@ -556,4 +558,237 @@ footer {
     font-weight: 400;
     line-height: 24px;
     opacity: 0.6;
+}
+
+
+/* responsive design */
+/* mobile device upto 576px */
+@media screen and (max-width:576px) {
+
+    .nav-menu,
+    .btn-primary {
+        visibility: hidden;
+    }
+
+    .hamburger-menu {
+        display: block !important;
+    }
+
+    .hamburger-menu img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .nav {
+        padding: 16px 20px;
+    }
+
+    .nav-image {
+        width: 137px;
+    }
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-content h1 {
+        font-size: 40px;
+        font-weight: 800;
+
+    }
+
+    .text-content p {
+        font-size: 16px;
+        width: 400px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .about-section {
+        padding: 0px 20px;
+    }
+
+    .showcase-text {
+        margin-bottom: 40px;
+    }
+
+    .about-section h1 {
+        margin-top: 40px;
+        font-size: 32px;
+        margin-bottom: 16px;
+        font-weight: bold;
+    }
+
+    .about-description p {
+        margin-bottom: 40px;
+        line-height: 20px;
+        opacity: 0.8;
+        font-size: 16px;
+        font-weight: 400;
+
+    }
+
+    hr {
+        border: 1px solid white;
+        text-align: center;
+        width: 95%;
+        opacity: 0.1;
+        margin-bottom: 40px;
+    }
+
+
+    /* showcase */
+
+    .showcase-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+
+    }
+
+    .showcase-content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+    }
+
+    .showcase-content p {
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        opacity: 0.8;
+
+    }
+
+    .showcase-title {
+        font-size: 40px !important;
+        font-weight: 900;
+        color: #00FF88;
+
+    }
+
+    /* why choose techwave*/
+
+    .whychoose-techwave {
+        padding: 40px 20px !important;
+    }
+
+    .whychoose-techwave .heading h1 {
+        margin-bottom: 32px;
+    }
+
+    .card-container {
+        display: grid;
+        width: 100%;
+        gap: 16px;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+    }
+
+    .cards1,
+    .cards2,
+    .cards3,
+    .cards4,
+    .cards5 {
+        grid-column: span 1;
+        grid-row: span 1;
+        height: auto;
+        padding: 10px;
+    }
+
+    .inner-container {
+        padding: 24px;
+    }
+
+    .cards1 img {
+        margin-top: 0px;
+    }
+
+    /* featured episodes */
+
+    .featured-episodes {
+        padding: 40px 20px 60px;
+
+    }
+
+    .featured-episodes h1 {
+        margin-bottom: 8px;
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .cards-content {
+        border-radius: 24px;
+        width: 100%;
+
+    }
+
+    .video iframe {
+        width: 100%;
+        height: 300px !important;
+    }
+
+    .video-heading h1 {
+        font-size: 20px;
+
+
+    }
+
+    .host-card-container {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+
+    }
+
+
+    footer {
+        background: url('./assets/mobilefooter.png');
+        background-size: cover;
+        height: auto;
+
+    }
+
+    .footer-heading-img img {
+        margin-top: 40px;
+        width: 219px;
+        height: 32px;
+    }
+
+    .footer-links-container {
+        margin-top: 24px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .copyright {
+        margin-bottom: 40px;
+
+    }
+
+
+
 }
