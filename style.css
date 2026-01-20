@@ -438,21 +438,19 @@ hr {
 }
 
 
-
-
-
-
-.meet-the-host{
+/* meet the host */
+.meet-the-host {
     display: flex;
     flex-direction: column;
-        background-color: #1A0B2E;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 120px;
+    background-color: #1A0B2E;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 120px;
 
 
 }
-.host-card-container{
+
+.host-card-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -462,29 +460,34 @@ hr {
     gap: 24px;
     border-radius: 40px;
 }
-.host-name h1{
+
+.host-name h1 {
     font-size: 32px;
     font-weight: bold;
 }
-.host-details p{
-        opacity: 0.4;
-        margin-top: 16px;
-        margin-bottom: 16px;
-        line-height: 24px;
+
+.host-details p {
+    opacity: 0.4;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    line-height: 24px;
 
 }
-.host-heading h1{
- text-align: center;
- margin-bottom: 40px;
+
+.host-heading h1 {
+    text-align: center;
+    margin-bottom: 40px;
 
 }
+
 /* social icons */
-.social-icons{
+.social-icons {
     display: flex;
-    gap:8px;    
+    gap: 8px;
 
 }
-.icon-circle{
+
+.icon-circle {
     height: 40px;
     width: 40px;
     border: 1px solid #533C72;
@@ -495,9 +498,62 @@ hr {
 
 
 }
-.icon-circle img{
+
+.icon-circle img {
     height: 20px;
     width: 20px;
-    object-fit: contain;
+    /* object-fit: contain; */
 }
 
+/* footer */
+
+footer {
+    background: url('./assets/footer-bg.png') no-repeat center center;
+    background-size: cover;
+    height: 412px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.icon span {
+    opacity: 0.6;
+}
+
+.footer-heading-img img {
+    margin-top: 120px;
+    width: 410px;
+    height: 60px;
+}
+
+.footer-links-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.copyright {
+    margin-top: 32px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 0.6;
+}
